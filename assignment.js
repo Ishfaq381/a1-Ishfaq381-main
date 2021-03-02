@@ -28,6 +28,25 @@ function checkWinner(playerAChoice, playerBChoice) {
 
   Write your logic below based on above given rules.
   */
+ if (playerAChoice === ROCK && playerBChoice === PAPER) {
+   return PLAYER_B;
+ }
+ if (playerAChoice === ROCK && playerBChoice === SCISSORS) {
+   return PLAYER_A;
+ }
+if (playerAChoice === PAPER && playerBChoice === ROCK) {
+  return PLAYER_A;
+}
+if (playerAChoice === PAPER && playerBChoice === SCISSORS) {
+  return PLAYER_B;
+}
+if (playerAChoice === SCISSORS && playerBChoice === ROCK) {
+  return PLAYER_B;
+}
+if (playerAChoice === SCISSORS && playerBChoice === PAPER) {
+  return PLAYER_A;
+}
+return TIE;
 }
 
 /* DO NOT EDIT ANYTHING BELOW THIS LINE */
